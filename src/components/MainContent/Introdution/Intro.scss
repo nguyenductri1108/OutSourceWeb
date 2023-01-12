@@ -1,0 +1,39 @@
+.intro-wrapper {
+    display: flex;
+    justify-content: center;
+    font-family: ProximaNova, Arial, Tahoma, PingFangSC, sans-serif;
+    // border-bottom: 1px solid #ccc;
+}
+
+.intro-text {
+    margin-top: 48px;
+}
+
+.intro-title {
+    word-wrap: normal;
+    color: #fe8a71;
+    margin-bottom: 32px;
+    line-height: 36px;
+}
+
+.intro-des {
+    display: block;
+    color: #4a4e4d;
+    font-size: 16px;
+    margin-top: 16px;
+}
+
+.intro-img-wrapper {
+    height: 400px;
+    position: relative;
+}
+
+.intro-img {
+    background-image: url(../../../assets/img/IntroImg.jpg);
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    top: 0;
+    right: 36px;
+    background-size: cover;
+}

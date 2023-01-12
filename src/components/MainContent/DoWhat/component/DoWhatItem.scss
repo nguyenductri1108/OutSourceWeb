@@ -1,0 +1,19 @@
+.dowhat-des-list {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    margin-top: 32px;
+    margin-left: 32px;
+}
+
+.dowhat-des-item {
+    display: flex;
+    align-items: center;
+    font-family: SofiaPro, Arial, Tahoma, PingFangSC, sans-serif;
+}
+
+.dowhat-des-icon {
+    font-size: 20px;
+    color: #f53d2d;
+    margin-right: 8px;
+}
