@@ -1,12 +1,15 @@
 .header-wrapper {
     height: 100px;
-    background: #fafafa;
+    background: #000;
     font-family: ProximaNova, Arial, Tahoma, PingFangSC, sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     border-bottom: 1px solid #ccc;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
 .header-inner {
@@ -31,7 +34,7 @@
     justify-content: center;
     align-items: baseline;
     .header-menu-item {
-        color: #4a4e4d;
+        color: rgba($color: #fff, $alpha: 0.92);
         font-size: 16px;
         font-family: ProximaNova, Arial, Tahoma, PingFangSC, sans-serif;
 
@@ -46,10 +49,14 @@
         }
         &.special {
             font-size: 24px;
-            background-color: lightgreen;
+            background-color: #0071e3;
             border-radius: 6px;
             padding: 16px 24px;
             margin-left: 16px;
+        }
+        &.special:hover {
+            background-color: #0092e3;
+            color: #fff;
         }
     }
 }
