@@ -14,7 +14,11 @@ function DoWhatItem({ opposite, data }) {
                 <Fade mirror={opposite}>
                     <div
                         className={cx('dowhat-img col c-6')}
-                        style={{ backgroundImage: `url(${data.img})`, backgroundSize: 'cover' }}
+                        style={{
+                            backgroundImage: `url(${data.img})`,
+                            backgroundSize: 'cover',
+                            backgroundPosition: 'center',
+                        }}
                     ></div>
                 </Fade>
             )}

@@ -14,15 +14,18 @@ function Home() {
                 <div className={cx('grid wide')}>
                     <div style={{ height: '100px', marginBottom: '100px' }}></div>
                     <Intro></Intro>
+                    <div style={{ height: '100px', marginBottom: '50px' }}></div>
                 </div>
             </div>
 
-            <div className="grid" style={{ borderTop: '1px solid #ccc', marginBottom: '100px' }}>
+            <div className="grid superwide" style={{ borderTop: '1px solid #ccc', marginBottom: '100px' }}>
                 <DoWhat></DoWhat>
             </div>
 
-            <div className="grid" style={{ borderTop: '1px solid #ccc', backgroundColor: '#f7f7f7' }}>
-                <WhyChoose></WhyChoose>
+            <div style={{ borderTop: '1px solid #ccc', backgroundColor: '#f7f7f7' }}>
+                <div className="grid wide">
+                    <WhyChoose></WhyChoose>
+                </div>
             </div>
         </div>
     );

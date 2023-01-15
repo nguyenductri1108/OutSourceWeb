@@ -9,6 +9,11 @@
     margin: 0 auto;
 }
 
+.grid.superwide {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -21,6 +26,11 @@
     margin-right: 0;
 }
 
+.row.wide-gutters {
+    margin-left: -18px;
+    margin-right: -18px;
+}
+
 .col {
     padding-left: 4px;
     padding-right: 4px;
@@ -29,6 +39,11 @@
 .row.no-gutters .col {
     padding-left: 0;
     padding-right: 0;
+}
+
+.row.wide-gutters .col {
+    padding-left: 18px;
+    padding-right: 18px;
 }
 
 .c-0 {
