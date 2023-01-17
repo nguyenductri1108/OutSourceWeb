@@ -22,23 +22,17 @@ const dataWC = [
 ];
 
 function WhyChoose() {
-    const preload = dataWC.map((item, index) => {
-        return <WCItem data={item} />;
-    });
-
     return (
         <>
             <div className={cx('row')}>
                 <span className={cx('c-12 whychoose-wrapper-title')}>Vì sao BRAND là lựa chọn hàng đầu của bạn ?</span>
             </div>
 
-            <Zoom bottom>
-                <div className={cx('row')} style={{ justifyContent: 'center', margin: '0 -32px' }}>
-                    {dataWC.map((item, index) => {
-                        return <WCItem data={item} />;
-                    })}
-                </div>
-            </Zoom>
+            <div className={cx('row mobile-width')} style={{ justifyContent: 'center', margin: '0 -32px 32px' }}>
+                {dataWC.map((item, index) => {
+                    return <WCItem delay={100 + index * 200} data={item} />;
+                })}
+            </div>
         </>
     );
 }

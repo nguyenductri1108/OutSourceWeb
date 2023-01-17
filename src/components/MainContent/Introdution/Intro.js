@@ -8,7 +8,7 @@ function Intro() {
     return (
         <div className={cx('intro-wrapper row')}>
             <Fade left cascade>
-                <div className={cx('intro-text col c-6')}>
+                <div className={cx('intro-text intro-mobile col c-6')}>
                     <h1 className={cx('intro-title')}>Dịch vụ thiết kế website chuyên nghiệp </h1>
                     <span className={cx('intro-des')}>
                         BRAND cung cấp giải pháp thiết kế website tổng thể cho mọi doanh nghiệp Việt.
@@ -22,9 +22,7 @@ function Intro() {
             </Fade>
 
             <Fade right>
-                <div className={cx('intro-img-wrapper col c-6')}>
-                    <div className={cx('intro-img')}></div>
-                </div>
+                <div className={cx('intro-img-wrapper intro-mobile col c-5 c-o-1')}></div>
             </Fade>
         </div>
     );

@@ -22,3 +22,19 @@
     line-height: 2.8rem;
     font-family: ProximaNova, Arial, Tahoma, PingFangSC, sans-serif;
 }
+
+@media (max-width: 740px) {
+    .mobile-width {
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        flex-direction: column;
+        margin: 0 16px !important;
+        .wcitem-wrapper {
+            flex-basis: 100%;
+            max-width: 100%;
+            margin: 16px 16px;
+            width: 530px;
+        }
+    }
+}

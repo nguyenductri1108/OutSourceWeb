@@ -25,15 +25,18 @@
 
 .intro-img-wrapper {
     height: 400px;
-    position: relative;
+    background-image: url(../../../assets/img/IntroImg.jpg);
+    background-size: cover;
 }
 
-.intro-img {
-    background-image: url(../../../assets/img/IntroImg.jpg);
-    position: absolute;
-    width: 80%;
-    height: 80%;
-    top: 0;
-    right: 36px;
-    background-size: cover;
+@media (max-width: 740px) {
+    .intro-mobile {
+        max-width: 80%;
+        flex-basis: 80%;
+    }
+    .intro-mobile.intro-img-wrapper {
+        max-width: 100%;
+        flex-basis: 100%;
+        margin: 32px 0 0;
+    }
 }

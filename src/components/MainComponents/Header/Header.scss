@@ -17,6 +17,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    height: 100%;
 }
 
 .header-logo {
@@ -37,26 +38,33 @@
         color: rgba($color: #fff, $alpha: 0.92);
         font-size: 16px;
         font-family: ProximaNova, Arial, Tahoma, PingFangSC, sans-serif;
-
+        height: 100%;
         padding: 10px 16px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         &:hover {
             background-color: lightblue;
             color: #444444;
             cursor: pointer;
-            border-top-left-radius: 6px;
-            border-bottom-right-radius: 6px;
             box-shadow: 0 0 3px rgba($color: #000000, $alpha: 0.5);
         }
         &.special {
-            font-size: 24px;
+            font-size: 2.4rem;
             background-color: #0071e3;
-            border-radius: 6px;
-            padding: 16px 24px;
             margin-left: 16px;
+            line-height: 2.8rem;
         }
         &.special:hover {
             background-color: #0092e3;
             color: #fff;
         }
+    }
+}
+
+@media (max-width: 740px) {
+    .header-inner {
+        margin: 0 24px;
     }
 }

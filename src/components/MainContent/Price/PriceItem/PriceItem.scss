@@ -1,0 +1,95 @@
+.c-4-custom {
+    flex: 0 0 30%;
+    max-width: 30%;
+    padding: 50px 30px 70px;
+    font-family: ProximaNova, Arial, Tahoma, PingFangSC, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 10px;
+}
+
+.priceitem-wrapper {
+    box-shadow: 1px 4px 10px rgb(212 32 39 / 8%);
+    border-radius: 10px;
+    &:hover {
+        box-shadow: 2px 4px 17px 8px #d4202714;
+    }
+    transition: all 0.5s;
+    border: 1px #eee solid;
+    position: relative;
+}
+
+.priceitem-title {
+    font-size: 2.3rem;
+    font-family: SofiaPro, Arial, Tahoma, PingFangSC, sans-serif;
+    text-transform: uppercase !important;
+    margin-bottom: 20px;
+}
+
+.priceitem-price {
+    font-size: 2.8rem;
+    font-family: SofiaPro, Arial, Tahoma, PingFangSC, sans-serif;
+    text-transform: uppercase !important;
+}
+
+.priceitem-separate {
+    height: 3px;
+    width: 30px;
+    margin: 20px auto;
+}
+
+.priceitem-des {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    font-style: italic !important;
+}
+
+.priceitem-des2 {
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+    text-transform: uppercase !important;
+    line-height: 2.8rem;
+    font-weight: 700;
+}
+
+.priceitem-detail-list {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.priceitem-detail-item {
+    display: flex;
+    margin-bottom: 1.6rem;
+    .priceitem-detail-item-title {
+        text-align: left;
+        line-height: 2rem;
+    }
+}
+
+.price-register {
+    border-radius: 10px;
+    padding: 13px 30px 15px 37px;
+    margin-top: 50px;
+    border: none;
+    display: flex;
+    align-items: center;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.price-tag {
+    background-image: url(../../../../assets/svg/tag.svg);
+    position: absolute;
+    right: 15px;
+    top: -8px;
+    padding: 16px 10px 60px 10px;
+    font-weight: 700;
+    color: #ffe351;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
