@@ -1,0 +1,15 @@
+.main-title {
+    display: block;
+    color: white;
+    font-family: ProximaNova, Arial, Tahoma, PingFangSC, sans-serif;
+    font-size: 4.8rem;
+    position: sticky;
+    top: 50%;
+    margin: 0 auto;
+    text-shadow: 0px 0px 2px #ffffff;
+    transition: all 0.1s;
+}
+
+.hidden {
+    display: none;
+}

@@ -37,7 +37,7 @@ function PriceItem({ data }) {
             <div className={cx('priceitem-detail-list')}>
                 {data.details.map((item, index) => {
                     return (
-                        <div className={cx('priceitem-detail-item')}>
+                        <div key={index} className={cx('priceitem-detail-item')}>
                             <CheckCircleIcon
                                 className={cx('priceitem-detail-item-icon')}
                                 fontSize="1.6rem"

@@ -183,7 +183,7 @@ function Price() {
 
             <div className={cx('price-inner row')}>
                 {priceData.map((item, index) => {
-                    return <PriceItem data={item}></PriceItem>;
+                    return <PriceItem key={index} data={item}></PriceItem>;
                 })}
             </div>
 

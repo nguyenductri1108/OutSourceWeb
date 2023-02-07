@@ -30,7 +30,7 @@ function DoWhatItem({ opposite, data }) {
                     <ul className={cx('dowhat-des-list')}>
                         {data.data.map((item, index) => {
                             return (
-                                <li className={cx('dowhat-des-item')}>
+                                <li key={index} className={cx('dowhat-des-item')}>
                                     <Tada delay={1000}>
                                         <span>
                                             <DoneOutlineIcon

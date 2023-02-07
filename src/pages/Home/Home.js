@@ -5,6 +5,8 @@ import DoWhat from 'src/components/MainContent/DoWhat';
 import styles from './Home.scss';
 import WhyChoose from 'src/components/MainContent/WhyChoose';
 import Price from 'src/components/MainContent/Price/Price';
+import { useRef } from 'react';
+import StickyMainDes from 'src/components/stickyComponent/stickyMainDes/stickyMainDes';
 
 const cx = classNames.bind(styles);
 
@@ -16,6 +18,7 @@ function Home() {
             }}
             className={cx('home-wrapper')}
         >
+            <StickyMainDes></StickyMainDes>
             <div className={cx('grid')} style={{ backgroundColor: '#f7f7f7' }}>
                 <div className={cx('grid wide')}>
                     <div style={{ height: '100px', marginBottom: '100px' }}></div>
@@ -37,6 +40,15 @@ function Home() {
                     <WhyChoose></WhyChoose>
                 </div>
             </div>
+
+            <button
+                onClick={(e) => {
+                    console.log(e.target.getBoundingClientRect().bottom);
+                }}
+                style={{ backgroundColor: 'red', width: '100px', height: '100px' }}
+            >
+                click me
+            </button>
 
             <div style={{ position: 'relative', borderTop: '1px solid #ccc', backgroundColor: '#fff' }}>
                 <div className="grid wide">

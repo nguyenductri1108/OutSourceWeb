@@ -55,7 +55,7 @@ function DoWhat() {
             </div>
             {dataDoWhat.map((item, index) => {
                 return (
-                    <div className={cx('row')} style={{ height: '300px' }}>
+                    <div key={index} className={cx('row')} style={{ height: '300px' }}>
                         <DoWhatItem opposite={index % 2 !== 0} data={item}></DoWhatItem>
                     </div>
                 );

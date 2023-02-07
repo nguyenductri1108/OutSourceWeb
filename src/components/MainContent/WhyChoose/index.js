@@ -30,7 +30,7 @@ function WhyChoose() {
 
             <div className={cx('row mobile-width')} style={{ justifyContent: 'center', margin: '0 -32px 32px' }}>
                 {dataWC.map((item, index) => {
-                    return <WCItem delay={100 + index * 200} data={item} />;
+                    return <WCItem key={index} delay={100 + index * 200} data={item} />;
                 })}
             </div>
         </>
