@@ -1,0 +1,14 @@
+.text-list {
+    color: white;
+    font-family: var(--text-font-family);
+    font-size: 6.4rem;
+    list-style: none;
+    line-height: 120%;
+    text-align: left;
+    .text-item {
+        width: 100%;
+        display: inline;
+        opacity: 0.15;
+        transition: opacity 0.2;
+    }
+}

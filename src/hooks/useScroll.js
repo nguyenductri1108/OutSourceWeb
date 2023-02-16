@@ -6,7 +6,6 @@ function useScroll(stickyChild, parent, growPercent) {
     const [diffGrow, setDiffGrow] = useState();
 
     const calc = () => {
-        console.log(stickyChild);
         const e1OffsetTop = stickyChild.offsetTop;
         const e2OffsetTop = getElementOffset(parent);
 
@@ -15,7 +14,7 @@ function useScroll(stickyChild, parent, growPercent) {
 
         setDiffHeight(diffHeight);
         setDiffGrow(diffHeight * growPercent);
-        console.log(diffHeight);
+        // console.log(diffHeight);
     };
 
     useEffect(() => {

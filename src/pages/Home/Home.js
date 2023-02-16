@@ -7,6 +7,7 @@ import WhyChoose from 'src/components/MainContent/WhyChoose';
 import Price from 'src/components/MainContent/Price/Price';
 import { useRef } from 'react';
 import StickyMainDes from 'src/components/stickyComponent/stickyMainDes/stickyMainDes';
+import StickyTextDes from 'src/components/stickyComponent/stickyTextDes/stickyTextDes';
 
 const cx = classNames.bind(styles);
 
@@ -19,6 +20,7 @@ function Home() {
             className={cx('home-wrapper')}
         >
             <StickyMainDes></StickyMainDes>
+            <StickyTextDes></StickyTextDes>
             <div className={cx('grid')} style={{ backgroundColor: '#f7f7f7' }}>
                 <div className={cx('grid wide')}>
                     <div style={{ height: '100px', marginBottom: '100px' }}></div>
